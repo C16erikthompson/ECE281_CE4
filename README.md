@@ -23,42 +23,62 @@ Inherent addressing includes the following commands:
 Immediate addressing includes the following commands:
 
 •	ADDI (616) Add “immediately” the value of the second word to the value in the accumulator; 
+
 •	LDAI (716) Load (copy) “immediately” the second word to the accumulator
 
 Direct addressing includes the following commands:
 
 •	OUT (416) Output (copy) the value in the accumulator to the addressed I/O port; Second word is the port address
+
 •	IN (516) Input (copy) the value at the addressed I/O port to the accumulator; Second word is the port address
+
 •	AND (816) AND the value located at the memory address (formed by the second and third words
   of the instruction) with the value in the accumulator
+  
 •	JMP (916) Unconditional jump (transfer program execution) to the instruction located at the
   memory address (formed by the second and third words of the instruction)
+  
 •	JZ  (A16) Jump (transfer program execution) to the instruction located at the memory address
   (formed by the second and third words of the instruction) if the value in the accumulator = 0
+  
 •	JN  (B16) Jump (transfer program execution) to the instruction located at the memory address 
   (formed by the second and third words of the instruction) if the most significant bit of the
   accumulator = 1 (indicating the value in the accumulator represents a negative number)
+  
 •	OR  (C16) OR the value located at the memory address (formed by the second and third words of
   the instruction) with the value in the accumulator
+  
 •	STA (D16) Store (copy) the value in the accumulator at the memory address (formed by the second
   and third words of the instruction)
+  
 •	ADDD (E16) Add “directly” the value located at the memory address (formed by the second and third
   words of the instruction) to the value in the accumulator
+  
 •	LDAD (F16) Load (copy) “directly” into the accumulator the value at the memory address (formed by
   the second and third words of the instruction)
 
 #Summary of PRISM Architecture
 
-•	PRISM contains four major subsystems
+•	PRISM contains four major subsystems:
+
 •	Controller
+
 •	Datapath
+
 •	Memory Subsystem
+
 •	Input/Output (I/O) Subsystem
 	
-•	PRISM is a bus-structured computer with three major busses
+•	PRISM is a bus-structured computer with three major busses:
+
 •	Bi-directional Data Bus
+
 •	Address Bus
+
 •	Control Bus
+
 •	Datapath Control Lines
+
 •	Datapath Status Lines
+
 •	I/O and Memory Control Lines
