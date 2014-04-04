@@ -12,8 +12,11 @@ requires the program to access a specific point in memory.
 Inherent addressing includes the following commands:
 
 •	NOP (016) No Operation
+
 •	NEG (116) Negate the value in the accumulator (generate the 2's complement)
+
 •	NOT (216) Complement the value in the accumulator (generate the 1's complement)
+
 •	ROR (316) Rotate each bit in the accumulator right by one position (and ‘wrap’ 
   the  least-significant bit around to the most-significant bit’s position)
   
